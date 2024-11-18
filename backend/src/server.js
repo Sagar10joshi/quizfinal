@@ -167,7 +167,8 @@ app.post('/score', async(req, res) => {
 dbConnect()//Function for the connection of database
 
 
-module.exports = app; // Export the app instance
+export default app;
+
 
 // app.listen(process.env.PORT,()=>{
 //     console.log(`App is listning on PORT : ${process.env.PORT}`)
