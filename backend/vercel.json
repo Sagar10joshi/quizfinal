@@ -1,15 +1,18 @@
 {
   "version": 2,
   "builds": [
-    { "src": "src/server.js", "use": "@vercel/node" }
+    {
+      "src": "src/server.js",  // Path to your server entry point (adjust if needed)
+      "use": "@vercel/node"     // Use Vercel's Node.js runtime
+    }
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "src/server.js",
-      "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],  
+      "src": "/(.*)",  // Route all paths to the server.js entry point
+      "dest": "src/server.js",// Define the destination for the backend
+      "methods": ["GET" , "POST" , "PUT" , "DELETE" , "OPTIONS"],
       "headers": {
-        "Access-Control-Allow-Origin": "https://quizfinal-iacx-4oa5w1cx4-sagars-projects-0f20619e.vercel.app",
+        "Access-Control_Allow-Origin": "*"
       }
     }
   ]
