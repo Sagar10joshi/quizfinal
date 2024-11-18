@@ -12,7 +12,7 @@ dotenv.config({
 
 const app = express();
 const corsOptions = {
-    origin: '*', // Allow all origins
+    origin: 'https://quizfinal-iacx-4oa5w1cx4-sagars-projects-0f20619e.vercel.app', // Allow all origins
     methods: 'GET,POST,PUT,DELETE', // Specify allowed HTTP methods
     allowedHeaders: 'Content-Type,Authorization', // Specify allowed headers
   };
