@@ -28,6 +28,7 @@ const LoginPage = () => {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({ username, password }),
+                credentials: 'include', // If you're using cookies for JWT
             });
 
             const data = await response.json();
